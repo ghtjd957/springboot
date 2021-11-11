@@ -5,7 +5,6 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import javax.management.relation.Role;
 import javax.persistence.*;
 
 @Getter
@@ -40,7 +39,7 @@ public class User {
 
     public User update(String name, String pircture) {
         this.name = name;
-        this.picture = pircture;
+        this.picture = picture;
 
         return this;
 
